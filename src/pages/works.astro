@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Posts from '../components/posts.astro';
+
+import KariLab from '../assets/works/KariLab.jpg';
+import TENTEN from '../assets/works/TENTEN.jpg';
+import OVER from '../assets/works/OVER.jpg';
+---
+
+<Layout title="Works - Cymatics">
+  <div class="container my-3 bg-secondary bg-opacity-50" style="padding: 30px;">
+    <h3 style="text-align: center;">LOGO DESIGN</h3>
+    <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+      <div class="col">
+        <img src={ KariLab.src } class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#karil">
+        <Posts modal_id="karil" title="Karil研究所" image={KariLab.src}>Karil研究所様のロゴデザインを担当しました。<br>シンボルは社名の由来でもあるカレーをモチーフに、幾何学的なデザインに仕上げました。カラーリングは橙系統の色でまとめ、創造性と親しみやすさのあるビジュアルに仕上げました。ロゴタイプは太字のゴシック体でデザインし、信頼感を与えるデザインにしています。</Posts>
+      </div>
+      <div class="col">
+        <img src={ TENTEN.src } class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#TENTEN">
+        <Posts modal_id="TENTEN" title="TENTEN" image={TENTEN.src}>TENTENは、HACK U KOSEN 2022にて「衝撃のイナズマZ」様が開発した、寮点呼オンラインサービスです。ロゴデザインを担当しました。<br>シンボルは時計とチェックマークを組み合わせ、点呼を表現しました。カラーリングは万全のセキュリティをイメージし、アクセントに安心感を与えるライトグリーンを設定しました。</Posts>
+      </div>
+      <div class="col">
+        <img src={ OVER.src } class="img-fluid" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#OVER">
+        <Posts modal_id="OVER" title="OVER" image={OVER.src}>長野高専第56回工嶺祭 4SJ合同クラス企画「OVER ～そして物語は加速する～(OVERゲームセンター)」の公式ホームページのロゴデザインを担当しました。<br>シンボルは動物をモチーフに、顔の輪郭や目の形状にはゲームパッドの要素を取り入れ、レトロゲームのキャラクターのようなビジュアルに仕上げました。ロゴタイプはシンボルとは対照的に、近未来的なデザインにしています。</Posts>
+      </div>
+    </div>
+  </div>    
+</Layout>

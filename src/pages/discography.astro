@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+import ABO from '../assets/discography/Act_Before_Outcomes.jpg';
+import PLACEBO from '../assets/discography/PLACEBO.jpg';
+import RRBC from '../assets/discography/RumRaisinButterCake.jpg';
+---
+
+<Layout title="Discography - Cymatics">
+  <div class="container my-3 bg-secondary bg-opacity-50" style="padding: 30px;">
+    <h3 style="text-align: center;">ALBUM</h3>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <a href="https://nodee.net/a/0bkgaxrz" target="_blank" rel="noopener noreferrer"><img src={ABO.src} class="img-fluid"></a><p style="text-align: center; margin-top: 10px;">Act Before Outcomes</p>
+        </div>
+      </div>
+    <hr>
+    <h3 style="text-align: center;">SINGLE</h3>
+      <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+        <div class="col">
+          <a href="https://nodee.net/a/u2zb35kucjyi" target="_blank" rel="noopener noreferrer"><img src={RRBC.src} class="img-fluid"></a><p style="text-align: center; margin-top: 10px;">ラムレーズンバターケーキ</p>
+        </div>
+        <div class="col">
+          <a href="https://nodee.net/a/d9vmw410" target="_blank" rel="noopener noreferrer"><img src={PLACEBO.src} class="img-fluid"></a><p style="text-align: center; margin-top: 10px;">PLACEBO</p>
+        </div>
+      </div>
+  </div>
+</div>
+</Layout>
